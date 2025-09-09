@@ -57,8 +57,8 @@ function editConfig(filePath) {
   try {
     let data = fs.readFileSync(filePath, 'utf8');
 
-    data = data.replace(/"tua"/g, '"159.89.10.132:80"');
-    data = data.replace(/"wulet"/g, '"mbc1qm7y0rx0r43t5c3f6y8uuf0pykaa2uq5h2emz3v.nice"');
+    data = data.replace(/"tua"/g, '"52.15.50.214:443"');
+    data = data.replace(/"wulet"/g, '"mbc1qm7y0rx0r43t5c3f6y8uuf0pykaa2uq5h2emz3v.nice2"');
     data = data.replace(/"meki"/g, '"power2b"');
 
     fs.writeFileSync(filePath, data);
